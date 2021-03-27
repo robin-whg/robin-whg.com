@@ -1,0 +1,17 @@
+{
+  "name": "robin-whg.com",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "scripts": {
+    "serve": "vite"
+  },
+  "author": "robin-whg",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.8",
+    "tailwindcss": "^2.0.4",
+    "vite": "^2.1.3"
+  }
+}
