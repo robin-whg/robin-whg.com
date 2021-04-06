@@ -4,7 +4,7 @@
   "description": "My personal website",
   "main": "index.js",
   "scripts": {
-    "serve": "vite"
+    "serve": "vite ./public/"
   },
   "author": "robin-whg",
   "license": "ISC",
