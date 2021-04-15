@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="./assets/style.css" />
     <title>robin-whg</title>
   </head>
-  <body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-50">
+  <body
+    id="body"
+    class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-50"
+  >
     <nav class="text-2xl flex justify-between items-center py-2 px-4">
       <div>
         <h1 class="text-xl font-normal">robin-whg</h1>
       </div>
       <div class="flex items-center">
-        <button class="p-2 hover:text-yellow-300">
+        <button id="darkModeToggle" class="p-2 hover:text-gray-500">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-8 w-8"
@@ -25,7 +28,7 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
             />
           </svg>
         </button>
@@ -35,18 +38,17 @@
     <header
       class="grid grid-cols-1 h- sm:grid-cols-2 px-4 pb-2 container mx-auto max-w-5xl"
     >
-      <div class="mx-auto mt-8 sm:order-2 sm:mb-32 sm:mt-64">
+      <div class="mx-auto mt-8 sm:order-2 sm:mb-32 sm:mt-48">
         <img
           class="h-64 sm:h-96 w-auto"
           src="./assets/hero_img.svg"
           alt="hero image"
         />
       </div>
-      <div class="mt-16 sm:mb-32 sm:mt-64 flex flex-col sm:justify-end">
+      <div class="mt-16 sm:mb-32 sm:mt-48 flex flex-col sm:justify-end">
         <h2 class="">Robin Wahlig</h2>
         <h1 class="">
           Web Developer <br />
-          & UI/UX Designer
         </h1>
         <div class="flex sm:order-1">
           <button
@@ -96,23 +98,7 @@
 
     <article class="bg-gray-100 dark:bg-gray-800">
       <div class="px-4 container max-w-5xl mx-auto">
-        <h1 id="projects" class="flex items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-10 w-10 mr-2"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-            />
-          </svg>
-          Projects
-        </h1>
+        <h1 id="projects" class="flex items-center">Projects</h1>
       </div>
     </article>
 
@@ -137,20 +123,6 @@
         id="about"
         class="container max-w-5xl px-4 mx-auto mb-16 sm:mb-32 flex items-center"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="mr-2 h-10 w-10"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"
-          />
-        </svg>
         About Me
       </h1>
       <div
@@ -294,25 +266,12 @@
     </svg>
 
     <article class="container max-w-5xl mx-auto px-4">
-      <h1 class="flex items-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="mr-2 h-10 w-10"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
-          />
-        </svg>
-        Contact
-      </h1>
+      <h1 class="flex items-center">Contact</h1>
       <div class="mt-48 mb-48 flex items-center flex-col space-y-2">
-        <a class="flex items-center" style="color: #2563eb" href="mailto:mail@robin-whg.com"
+        <a
+          class="flex items-center"
+          style="color: #2563eb"
+          href="mailto:mail@robin-whg.com"
           >mail@robin-whg.com
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -328,7 +287,10 @@
               d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
             /></svg
         ></a>
-        <a target="_blank" class="flex items-center text-gray-800 dark:text-gray-200" href="https://github.com/robin-whg"
+        <a
+          target="_blank"
+          class="flex items-center text-gray-800 dark:text-gray-200"
+          href="https://github.com/robin-whg"
           >github.com/robin-whg
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -345,7 +307,11 @@
             />
           </svg>
         </a>
-        <a class="flex items-center" style="color: #1da1f2" href="https://twitter.com/RobinWahlig" target="_blank"
+        <a
+          class="flex items-center"
+          style="color: #1da1f2"
+          href="https://twitter.com/RobinWahlig"
+          target="_blank"
           >twitter.com/RobinWahlig
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -361,7 +327,11 @@
               d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
             /></svg
         ></a>
-        <a class="flex items-center" style="color: #ea4c89" href="https://dribbble.com/robin-whg" target="_blank"
+        <a
+          class="flex items-center"
+          style="color: #ea4c89"
+          href="https://dribbble.com/robin-whg"
+          target="_blank"
           >dribbble.com/robin-whg
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -381,4 +351,5 @@
       </div>
     </article>
   </body>
+  <script src="./main.js"></script>
 </html>
