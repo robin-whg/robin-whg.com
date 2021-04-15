@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
     <title>robin-whg</title>
   </head>
   <body
@@ -47,12 +48,10 @@
       </div>
       <div class="mt-16 sm:mb-32 sm:mt-48 flex flex-col sm:justify-end">
         <h2 class="">Robin Wahlig</h2>
-        <h1 class="">
-          Web Developer <br />
-        </h1>
+        <h1 class="text-5xl">Web Developer <br /></h1>
         <div class="flex sm:order-1">
-          <button
-            onclick="document.getElementById('projects').scrollIntoView();"
+          <a
+            href="#projects"
             class="font-semibold items-center my-4 mr-4 bg-blue-600 dark:bg-blue-400 flex hover:bg-blue-500 py-2 px-4 text-gray-100 dark:text-gray-800"
           >
             My Work
@@ -70,12 +69,13 @@
                 d="M17 8l4 4m0 0l-4 4m4-4H3"
               />
             </svg>
-          </button>
-          <button
+          </a>
+          <a
             class="my-4 font-semibold hover:bg-gray-200 dark:hover:bg-gray-700 py-2 px-4"
+            href="#about"
           >
             About Me
-          </button>
+          </a>
         </div>
       </div>
     </header>
@@ -96,9 +96,9 @@
       />
     </svg>
 
-    <article class="bg-gray-100 dark:bg-gray-800">
+    <article id="projects" class="bg-gray-100 dark:bg-gray-800">
       <div class="px-4 container max-w-5xl mx-auto">
-        <h1 id="projects" class="flex items-center">Projects</h1>
+        <h1 class="flex items-center">Projects</h1>
       </div>
     </article>
 
@@ -118,9 +118,8 @@
       />
     </svg>
 
-    <article class="">
+    <article id="about" class="">
       <h1
-        id="about"
         class="container max-w-5xl px-4 mx-auto mb-16 sm:mb-32 flex items-center"
       >
         About Me
@@ -265,7 +264,7 @@
       </defs>
     </svg>
 
-    <article class="container max-w-5xl mx-auto px-4">
+    <article id="contact" class="container max-w-5xl mx-auto px-4">
       <h1 class="flex items-center">Contact</h1>
       <div class="mt-48 mb-48 flex items-center flex-col space-y-2">
         <a
