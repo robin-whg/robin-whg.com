@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./public/index.html'],
+  purge: ['./public/index.html', './assets/style.css'],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     fontFamily: {

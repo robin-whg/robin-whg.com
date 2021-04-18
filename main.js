@@ -5,29 +5,19 @@ if (
   window.matchMedia &&
   window.matchMedia("(prefers-color-scheme: dark)").matches
 )
-  body.classList.add("dark");
+body.classList.add("dark");
 
 document
   .querySelector("#darkModeToggle")
   .addEventListener("click", toggleDarkMode);
 
 function toggleDarkMode() {
-  console.log("test");
   if (body.classList.contains("dark")) {
     body.classList.remove("dark");
   } else {
     body.classList.add("dark");
   }
 }
-
-async function fetchREADME() {
-  const data = await fetch(
-    "https://raw.githubusercontent.com/robin-whg/firebase-auth/master/README.md"
-  );
-  console.log(data.text());
-}
-
-//fetchREADME()
 
 async function getRepos() {
   const url = "https://api.github.com/users/robin-whg/repos";
