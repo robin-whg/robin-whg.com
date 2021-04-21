@@ -1,2 +1,7 @@
 node_modules
 dist
+*.log
+.firebaserc
+firebase.json
+.cache
+.firebase

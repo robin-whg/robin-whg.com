@@ -5,7 +5,7 @@ if (
   window.matchMedia &&
   window.matchMedia("(prefers-color-scheme: dark)").matches
 )
-body.classList.add("dark");
+  body.classList.add("dark");
 
 document
   .querySelector("#darkModeToggle")
@@ -32,14 +32,14 @@ function insertCard(x) {
     "beforeend",
     `
     <div class="bg-gray-50 dark:bg-gray-900 py-4 px-8 rounded-xl flex flex-col">
-    <h3 class="mb-2">${ x.name }</h3>
+    <h3 class="mb-2">${x.name}</h3>
     <p class="mb-2 text-gray-700 dark:text-gray-300">
-      ${ x.description }
+      ${x.description}
     </p>
     <a
       target="_blank"
       class="flex items-center text-blue-500"
-      href="${ x.html_url }"
+      href="${x.html_url}"
       >github
       <svg
         xmlns="http://www.w3.org/2000/svg"
